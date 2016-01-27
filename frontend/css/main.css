@@ -1,0 +1,21 @@
+body{
+    padding: 20px;
+}
+
+@media (min-width: 1000px) {
+    .container{
+        max-width: 680px;
+    }
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p.description {
+    font-size: 21px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    line-height: 1.4;
+}
