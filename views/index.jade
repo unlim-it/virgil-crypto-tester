@@ -1,13 +1,17 @@
 extends layout
 
 block content
-  div(class='container')
+  div(class='container', ng-controller='mainCtrl')
     h1 Virgil Crypto
     hr
-    p(class='description') This is a modern benchmark that measures a Virgil Crypto Library's performance by running a suite of tests. 
+    p(class='description') This is a virgil benchmark that measures a Crypto Library's performance by running a suite of tests. 
     
     form 
       div(class='form-group')
         label Enter some text to encrypt
-        textarea(class='form-control', resize='none', rows='7')
+        textarea(ng-model='text',class='form-control', resize='none', rows='7')
+        
+      button(class='btn btn-default', ng-click='startBenchmark()') Start
+    
+    div(ng-bind-html='output') 
         
