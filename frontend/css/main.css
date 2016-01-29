@@ -32,11 +32,21 @@ p.description {
     font-family: 'Open Sans', sans-serif;
 }
 
-table{
-    width: 100%;    
+a.baconipsum{
+    cursor: pointer;
+}
+
+td{
+    min-width: 60px;
 }
 
 td.result{
-    color: green;
+    margin-left: 40px;
+    color: forestgreen;
     text-align: right;
+}
+
+p.error-message {
+    margin-top: 20px;
+    color: firebrick;
 }

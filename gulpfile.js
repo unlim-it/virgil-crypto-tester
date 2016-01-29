@@ -8,9 +8,8 @@ gulp.task('scripts', function() {
   return gulp.src([
       "./node_modules/jquery/dist/jquery.js",      
       "./node_modules/bootstrap/dist/js/bootstrap.js",
-      "./node_modules/angular/angular.js",      
-      "./node_modules/virgil-sdk/dist/virgil-sdk.dev.js",      
-      "./frontend/js/*.js"])
+      "./node_modules/angular/angular.js",          
+      "./node_modules/bluebird/js/browser/bluebird.js"])
       .pipe(plumber())
       .pipe(uglify())
       .pipe(concat("main.js"))
