@@ -1,6 +1,3 @@
-(function(angular) {
-  "use strict";
-
 var cryptoTester = angular.module("cryptoTester",[]);
 
 cryptoTester.controller("mainCtrl", ["$scope", function($scope) {
@@ -103,5 +100,3 @@ cryptoTester.controller("mainCtrl", ["$scope", function($scope) {
 		});
     };
 }]);
-
-})(window.angular);
